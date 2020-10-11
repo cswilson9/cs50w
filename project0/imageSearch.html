@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+        <title>Google Images</title>
     </head>
     <body>
         <div style="text-align: right;">
@@ -9,9 +12,10 @@
         </div>
         <h1>Google Image Search</h1>
         <form action="https://google.com/search">
+            <input type="hidden" name="tbm" value="isch">
             <input type="text" name="q">
             <input type="submit" value="Google Search">
-            <!-- Generates https://www.google.com/search?q=Harvard -->
+            <!-- Generates https://www.google.com/search?tbm=isch&q=cat -->
         </form>
     </body>
 </html>
